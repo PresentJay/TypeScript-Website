@@ -8,6 +8,6 @@ const server = http.createServer((request, response) => {
 })
 
 const port = process.env.PORT || 3000
-server.listen(port, () => {
+server.listen(port, '0,0,0,0', () => {
   console.log("Running at http://localhost:" + port)
 })
